@@ -4,9 +4,7 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build",
-    "dev": "concurrently --raw 'ng build --configuration development --watch' 'cd dist/my-lib && npm i && npm link && cd ../.. && echo --- && echo Build\\ is\\ ready!\\ You\\ can\\ now\\ link\\ your\\ app\\ against\\ the\\ loca\\ my\\ Lib.'",
-    "one": "concurrently --raw 'ng build --configuration development --watch'",
-    "two": "concurrently --raw 'cd dist/my-lib && npm i && npm link && cd ../..'"
+    "link": "concurrently --raw 'cd dist/my-lib && npm i && npm link && cd ../..'"
   },
   "private": true,
   "dependencies": {
